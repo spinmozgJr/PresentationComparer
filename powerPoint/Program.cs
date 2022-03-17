@@ -8,9 +8,11 @@ namespace powerPoint
     {
         static void Main(string[] args)
         {
-            string path = "";
+            string path = @"C:\work\test.pptx";
+            int width = 320;
+            int height = 240;
             PresentationSeparator presentationSeparator = new PresentationSeparator();
-            presentationSeparator.ConvertToPictures(path);
+            presentationSeparator.ConvertToPictures(path, width, height);
         }
     }
 }
